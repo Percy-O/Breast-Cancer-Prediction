@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mxnet = {file = "mxnet-1.8.0-py2.py3-none-win_amd64.whl"}
+numpy = "==1.23"
+opencv-python = "*"
+crispy-bootstrap5 = "*"
+django = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

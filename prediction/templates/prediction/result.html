@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction result</title>
+
+    <link rel="stylesheet" href="{% static 'bootstrap5/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            src: url('{% static "fonts/Poppins-Regular.otf" %}')
+        }
+
+        * {
+            font-family: 'Poppins';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Prediction Results</h1>
+       
+        <div class="row">
+            {% for image_path, prediction in predictions %}
+            <div class="col-md-3 my-2">
+                <div class="card">
+                    <img class="card-img-top" src="media/{{ image_path }}" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">
+                            
+                            {% if prediction == 1 %}
+                                <span class="text-danger"> Cancerous </span>
+                            {% else %}
+                                <span class="text-success">Not Cancerous</span>
+                            {% endif %}
+                            
+                        </h5>
+                        {% comment %} <p class="card-text">Text</p> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+        </div>
+       
+        <a href="{% url 'prediction:home' %}">Back</a>
+    </div>
+</body>
+
+<script src="{% static 'bootstrap5/js/bootstrap.bundle.min.js' %}"></script>
+
+</html>
