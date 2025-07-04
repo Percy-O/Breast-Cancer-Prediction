@@ -145,9 +145,8 @@ breast_cancer_webapp/
 ## 📬 Contact
 
 **Author:** Percy Owoeye
-**GitHub:** [@yourusername](https://github.com/yourusername)
-**Email:** [your.email@example.com](mailto:your.email@example.com)
-
+**GitHub:** [@Percy-O](https://github.com/percy-o)
+**Email:** [owoeyepercyolawale@gmail.com](mailto:owoeyepercyolawale@gmail.com)
 ---
 
 ## 🙌 Acknowledgement
