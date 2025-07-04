@@ -79,7 +79,7 @@ breast_cancer_webapp/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/percy-o/breast-cancer-detection-django.git
+   git clone https://github.com/percy-o/breast-cancer-prediction.git
    cd breast-cancer-detection-django
    ```
 
